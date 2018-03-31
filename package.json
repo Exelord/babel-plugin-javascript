@@ -1,6 +1,7 @@
 {
-  "version": "0.0.0",
-  "description": "",
+  "name": "babel-plugin-javascript",
+  "version": "0.1.0",
+  "description": "Import all your globals as ES6 modules",
   "repository": "Exelord/babel-plugin-javascript",
   "author": "Maciej Kwaśniak <kmaciek17@gmail.com>",
   "main": "lib/index.js",
@@ -18,6 +19,10 @@
     "prepublish": "npm run clean && npm run build"
   },
   "keywords": [
-    "babel-plugin"
+    "babel-plugin",
+    "javascript",
+    "globals",
+    "modules",
+    "imports"
   ]
 }
