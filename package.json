@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-javascript",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Import all your globals as ES6 modules",
   "repository": "Exelord/babel-plugin-javascript",
   "author": "Maciej Kwaśniak <kmaciek17@gmail.com>",

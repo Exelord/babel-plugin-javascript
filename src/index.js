@@ -1,10 +1,12 @@
 function transformSpecifiers(path, prefix) {
   path.get('specifiers').forEach((specifier) => {
-    let name = specifier.node.local.name;
+    let node = specifier.node;
+    let localName = node.local.name;
+    let importName = node.imported ? node.imported.name : localName;
     let isImportDefault = specifier.isImportDefaultSpecifier();
-    let module = isImportDefault ? prefix : `${prefix}.${name}`;
+    let module = isImportDefault ? prefix : `${prefix}.${importName}`;
 
-    path.scope.rename(name, module);
+    path.scope.rename(localName, module);
   });
 }
 
