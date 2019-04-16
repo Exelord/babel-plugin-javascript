@@ -10,10 +10,10 @@ function transformSpecifiers(path, prefix) {
   });
 }
 
-export default function({types: t }) {
+export default function() {
   return {
     visitor: {
-      ImportDeclaration(path, state) {
+      ImportDeclaration(path) {
         let importPath = path.node.source.value;
 
         if (importPath.startsWith('javascript')) {
